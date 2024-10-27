@@ -1,0 +1,87 @@
+.hero-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  color: #CCCCCC;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.control-button {
+  background-color: #666;
+  color: #FFF;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.control-button:hover {
+  background-color: #888;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto; /* Allow height to adjust for smaller screens */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .overlay {
+    padding: 20px; /* Reduce overlay padding */
+  }
+
+  .hero-section h1 {
+    font-size: 32px; /* Smaller font size for mobile */
+  }
+
+  .hero-section p {
+    font-size: 16px; /* Smaller font size for mobile */
+    max-width: 100%; /* Allow full width */
+  }
+
+  .control-button {
+    padding: 8px 16px; /* Adjust button padding */
+    margin: 0 5px; /* Reduce button margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 28px; /* Even smaller font size for very small screens */
+  }
+
+  .hero-section p {
+    font-size: 14px; /* Even smaller font size for very small screens */
+  }
+}

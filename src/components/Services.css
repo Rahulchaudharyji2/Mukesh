@@ -1,0 +1,40 @@
+ /* Services.css */
+
+/* Base styles already included above */
+
+@media (max-width: 992px) {
+  .services-container {
+      justify-content: center;
+  }
+
+  .service-card {
+      width: 45%;
+      margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card {
+      width: 80%;
+      margin: 10px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-card {
+      width: 90%;
+      margin: 10px auto;
+  }
+
+  .services-heading {
+      font-size: 2rem;
+  }
+
+  .service-card h3 {
+      font-size: 1.25rem;
+  }
+
+  .service-card p {
+      font-size: 0.9rem;
+  }
+}
